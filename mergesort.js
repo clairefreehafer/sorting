@@ -10,15 +10,19 @@ function split(wholeArray) {
 
 
 function merge(arr1, arr2){
+  debugger;
   var newArray = [];
-
-  for (var i=0; i<arr1.length; i++) {
-
-
-
+  while (arr1.length && arr2.length);
+    var pointer1 = arr1[0];
+    var pointer2 = arr2[0];
+    if (pointer1 > pointer2) {
+      newArray.push(pointer2);
+      arr2.shift();
+    } else {
+      newArray.push(pointer1);
+      arr1.shift();
+    }
   }
-
-}
 
 function mergeSort(array) {
 
